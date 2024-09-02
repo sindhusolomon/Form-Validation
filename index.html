@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <form class="form" onsubmit="validateForm(); event.preventDefault();">
+            <h3>Create Account</h3>
+
+            <label> User Name:</label>
+            <input id="name" type="text" placeholder="Enter Your Name">
+            <small class="error"></small>
+ 
+            <label>Mobile Number:</label>
+            <input id="mobile" type="number" pattern="[0-9]{10}" placeholder="Enter Your Mobile">
+            <small class="error"></small>
+
+            <label>Email:</label>
+            <input id="email" type="text" placeholder="Enter Your Email">
+            <small class="error"></small>
+
+            <label>Password:</label>
+            <input id="password" type="password" placeholder="Enter Your Password">
+            <small class="error"></small>
+
+            <div class="center">
+                <input class="submit" id="submit" type="submit" value="Submit">
+            </div>
+            <p class="success" id="success"> </p>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

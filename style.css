@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: url(https://tse3.mm.bing.net/th/id/OIP.QHFd781KUvaZwVpWMe6yCQHaDJ?w=293&h=148&c=7&r=0&o=5&dpr=1.5&pid=1.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* backdrop-filter: blur(100); */
+}
+.Container
+{
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: right;
+}
+form
+{
+    
+    /* backdrop-filter: blur(10); */
+    background-color: rgb(3, 61, 71);
+    border: 1px solid white;
+    padding: 30px 30px 50px 30px;
+}
+h3
+{
+    margin-top: -20px;
+    color: white;
+    text-align:center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline rgb(226, 3, 166);
+}
+label
+{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    display: block;
+}
+input,textarea
+{
+    display: block;
+    font-size: 20px;
+    color: white;
+    background: none;
+    /* margin-top: 10px; */
+    padding: 10px 50px 10px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(3, 81, 226);
+}
+input:focus,textarea:focus
+{
+    border-bottom: 3px solid rgb(47, 231, 47);
+}
+::placeholder
+{
+    color: rgb(99, 96, 96);
+}
+.center
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.center input
+{
+    background-color: violet;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+}
+.center input:hover
+{
+    transform: scale(1.1);
+}
+.error
+{
+    color: red;
+}
+.border-border
+{
+    border-bottom: 3px solid red;
+}
+.success
+{
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(2, 231, 2);
+}
